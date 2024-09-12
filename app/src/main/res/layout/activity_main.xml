@@ -13,15 +13,23 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"/>
-    <ImageButton
+    <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/play"
-        android:onClick="play"
-        android:contentDescription="Play Now" />
+        android:minWidth="48dp"
+        android:minHeight="48dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/play"
+            android:onClick="play"
+            android:contentDescription="Play Now" />
+    </FrameLayout>
+
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginTop="5dp"
         android:onClick="play"
         android:text="Play Now"
