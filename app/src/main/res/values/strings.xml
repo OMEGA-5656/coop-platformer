@@ -2,5 +2,6 @@
     <string name="app_name">coop-platformer</string>
     <string name="app_id">ca-app-pub-9769565470613711~4013002518</string>
     <string name="banner_adunit_id">ca-app-pub-9769565470613711/6403362131</string>
+    <string name="admob_app_id">ca-app-pub-9769565470613711~4013002518</string>
     <string name="interstitial_adunit_id">ca-app-pub-9769565470613711/1151035453</string>
 </resources>
