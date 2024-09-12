@@ -22,12 +22,19 @@ public class GameActivity extends AppCompatActivity implements SurfaceHolder.Cal
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
-        btn_click=MediaPlayer.create(this,R.raw.btn_click);
-        surfaceView=findViewById(R.id.surfaceView);
+
+        // Button click sound
+        btn_click = MediaPlayer.create(this, R.raw.btn_click);
+
+        // Initialize the surface view and game engine
+        surfaceView = findViewById(R.id.surfaceView);
         surfaceView.getHolder().addCallback(this);
         surfaceView.setFocusable(true);
+
+        // Initialize AppConstants (this will initialize GameEngine as well)
         AppConstants.initialization(GameActivity.this);
     }
+
 
     @Override
     public void surfaceCreated(@NonNull SurfaceHolder surfaceHolder) {
